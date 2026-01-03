@@ -8,4 +8,5 @@ export { LocationCard } from "./LocationCard";
 export type { Location } from "./LocationCard";
 export { LocationsSection } from "./LocationsSection";
 export { MenuSection } from "./MenuSection";
+export { AppDownloadLinks } from "./AppDownloadLinks";
 

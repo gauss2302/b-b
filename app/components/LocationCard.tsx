@@ -157,3 +157,4 @@ export const LocationCard = ({ location, index }: LocationCardProps) => {
   );
 };
 
+

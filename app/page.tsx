@@ -10,6 +10,7 @@ import {
   RevealOnScroll,
   LocationsSection,
   MenuSection,
+  AppDownloadLinks,
 } from "./components";
 
 export default function Home() {
@@ -169,19 +170,27 @@ export default function Home() {
           </div>
 
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in"
+            className="flex flex-col gap-6 items-center animate-fade-in"
             style={{ animationDelay: "0.6s" }}
           >
-            <MagneticButton className="group relative overflow-hidden bg-white text-black px-10 py-4 text-sm font-medium tracking-widest uppercase">
-              <span className="relative z-10">Explore Menu</span>
-              <div className="absolute inset-0 bg-white/80 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            </MagneticButton>
-            <MagneticButton className="group border border-white/30 px-10 py-4 text-sm font-medium tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300">
-              Our Locations
-              <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
-                →
-              </span>
-            </MagneticButton>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <MagneticButton className="group relative overflow-hidden bg-white text-black px-10 py-4 text-sm font-medium tracking-widest uppercase">
+                <span className="relative z-10">Explore Menu</span>
+                <div className="absolute inset-0 bg-white/80 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+              </MagneticButton>
+              <MagneticButton className="group border border-white/30 px-10 py-4 text-sm font-medium tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300">
+                Our Locations
+                <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </MagneticButton>
+            </div>
+            <div className="pt-4">
+              <p className="text-white/40 text-xs tracking-wider uppercase mb-3">
+                Download Our App
+              </p>
+              <AppDownloadLinks variant="horizontal" />
+            </div>
           </div>
         </div>
 
@@ -380,6 +389,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* App Download Section */}
+      <section className="relative py-24 px-6 border-y border-white/10">
+        <div className="mx-auto max-w-5xl">
+          <RevealOnScroll>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl sm:text-5xl font-extralight mb-4">
+                Order on the Go
+              </h2>
+              <p className="text-white/50 max-w-xl mx-auto">
+                Download our app to order ahead, earn rewards, and stay
+                connected with Beans & Brews wherever you are.
+              </p>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll delay={100}>
+            <div className="flex justify-center">
+              <AppDownloadLinks variant="horizontal" />
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-white/[0.03] via-transparent to-white/[0.03]" />
@@ -462,11 +493,23 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-white/30">
-              © 2026 Beans & Brews. All rights reserved.
-            </p>
-            <p className="text-sm text-white/30">Crafted with ○ and passion</p>
+          <div className="border-t border-white/10 pt-8">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                <p className="text-sm text-white/30">
+                  © 2026 Beans & Brews. All rights reserved.
+                </p>
+                <p className="text-sm text-white/30">
+                  Crafted with ○ and passion
+                </p>
+              </div>
+              <div className="flex flex-col items-center sm:items-end">
+                <p className="text-xs text-white/40 mb-3 tracking-wider uppercase">
+                  Get the App
+                </p>
+                <AppDownloadLinks variant="horizontal" />
+              </div>
+            </div>
           </div>
         </div>
       </footer>

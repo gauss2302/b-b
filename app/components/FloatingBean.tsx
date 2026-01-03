@@ -34,3 +34,4 @@ export const FloatingBean = ({ delay, size, left, duration }: FloatingBeanProps)
   </div>
 );
 
+
