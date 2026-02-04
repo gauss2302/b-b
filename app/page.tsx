@@ -195,7 +195,7 @@ export default function Home() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-slow">
+        <div className="absolute top-[850px] bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-slow">
           <span className="text-xs tracking-widest text-white/40 uppercase">
             Scroll
           </span>
