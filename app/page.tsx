@@ -83,15 +83,15 @@ export default function Home() {
                     item === "Locations"
                       ? "#locations"
                       : item === "Menu"
-                      ? "#menu"
-                      : "#"
+                        ? "#menu"
+                        : "#"
                   }
                   className="relative group py-2"
                 >
                   {item}
                   <span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-300 group-hover:w-full" />
                 </a>
-              )
+              ),
             )}
           </div>
           <MagneticButton className="border border-white/30 px-6 py-2 text-sm tracking-wider text-white hover:bg-white hover:text-black transition-all duration-300">

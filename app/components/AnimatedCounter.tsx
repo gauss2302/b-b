@@ -22,7 +22,7 @@ export const AnimatedCounter = ({
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -51,5 +51,3 @@ export const AnimatedCounter = ({
     </span>
   );
 };
-
-

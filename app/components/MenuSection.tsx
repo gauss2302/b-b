@@ -41,7 +41,8 @@ const menuData: MenuCategory[] = [
       },
       {
         name: "Cappuccino",
-        description: "Perfect balance of espresso, steamed milk, and velvety foam",
+        description:
+          "Perfect balance of espresso, steamed milk, and velvety foam",
         price: "$4.75",
         popular: true,
       },
@@ -423,5 +424,3 @@ export const MenuSection = () => {
     </section>
   );
 };
-
-

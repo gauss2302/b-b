@@ -9,8 +9,10 @@ export const AppDownloadLinks = ({
   variant = "horizontal",
   className = "",
 }: AppDownloadLinksProps) => {
-  const appleStoreUrl = "https://apps.apple.com/us/app/b-b-coffee-house/id1562147546";
-  const googlePlayUrl = "https://play.google.com/store/apps/details?id=uz.bnb.android";
+  const appleStoreUrl =
+    "https://apps.apple.com/us/app/b-b-coffee-house/id1562147546";
+  const googlePlayUrl =
+    "https://play.google.com/store/apps/details?id=uz.bnb.android";
 
   const isVertical = variant === "vertical";
   const isCompact = variant === "compact";
@@ -93,5 +95,3 @@ export const AppDownloadLinks = ({
     </div>
   );
 };
-
-
